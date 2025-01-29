@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1db4775613.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <i class="fa-solid fa-cloud-moon-rain"></i>
+        <h1>Weather App</h1>
+    </header>
+    <div class="home">
+        <form action="">
+            <input type="text" placeholder="Enter city name" id="city">
+            <i class="fa-solid fa-magnifying-glass" onclick="fetchData()" ></i>
+        </form>
+
+        <div class="result">
+            <h4>What's the weather like today <span id="cityName"></span> ?</h4>
+
+            <div class="data">
+                <img src="" alt="" id="wIcon">
+                <div class="right">
+                    <h1 id="temp"></h1>
+                    <p id="desc"></p>
+                </div>
+            </div>
+
+            <hr>
+            <div class="extras">
+                <div>
+                    <h5>Pressure</h5>
+                    <p id="pressure"></p>
+                </div>
+                <div>
+                    <h5>Visibility</h5>
+                    <p id="visibility"></p>
+                </div>
+                <div>
+                    <h5>Humidity</h5>
+                    <p id="humidity"></p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
